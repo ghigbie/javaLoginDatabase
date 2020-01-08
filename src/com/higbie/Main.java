@@ -1,9 +1,9 @@
 package com.higbie;
 
 import com.higbie.Helper.DBHandler;
+import com.mysql.cj.jdbc.PreparedStatementWrapper;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -20,10 +20,11 @@ public class Main {
                 + "VALUES(?, ?, ?, ?, ?)";
 
         preparedStatement = connection.prepareStatement(insert);
-        preparedStatement.setString(1, "Paulo");
-        preparedStatement.setString(2, "Dichone");
-        preparedStatement.setString(3, "pdichone");
-        preparedStatement.setString(4, "123 Park Ave");
-        preparedStatement.setInt(5, 33);
+        preparedStatement.setString(1, "Eva");
+        preparedStatement.setString(2, "Skywalker");
+        preparedStatement.setString(3, "esky");
+        preparedStatement.setString(4, "123 Place");
+        preparedStatement.setInt(5, 23);
+        preparedStatement.executeUpdate();
     }
 }
