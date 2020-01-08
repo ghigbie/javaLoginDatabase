@@ -25,4 +25,5 @@ public class Main {
         preparedStatement.setString(3, "pdichone");
         preparedStatement.setString(4, "123 Park Ave");
         preparedStatement.setInt(5, 33);
+    }
 }
